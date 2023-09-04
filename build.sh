@@ -3,14 +3,12 @@
 set -o errexit
 
 
-
 poetry install
-
-
 
 
 python manage.py collectstatic --no-input
 python manage.py migrate
 
-# Create the initial superuser before migrating
-python manage.py create_initial_superuser
+# here you would call to create superuser
+# under /management/commands/create_initial_superuser.py
+# python manage.py create_initial_superuser.py
