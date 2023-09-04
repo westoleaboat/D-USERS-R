@@ -2,10 +2,12 @@
 # exit on error
 set -o errexit
 
-# Create the initial superuser before migrating
-python manage.py create_initial_superuser
+
 
 poetry install
+
+# Create the initial superuser before migrating
+python manage.py create_initial_superuser
 
 
 python manage.py collectstatic --no-input

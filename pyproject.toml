@@ -4,7 +4,6 @@ version = "0.1.0"
 description = ""
 authors = ["atlasatlas <68698872+westoleaboat@users.noreply.github.com>"]
 readme = "README.md"
-packages = [{include = "django_render_users"}]
 
 [tool.poetry.dependencies]
 python = ">=3.8,<4.0"
