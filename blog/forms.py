@@ -1,7 +1,7 @@
 from django import forms
 from .models import Post
 
-from markdownx import MarkdownxFormField
+from markdownx.fields import MarkdownxFormField
 
 class PostForm(forms.ModelForm):
     STATUS_CHOICES = [('draft', 'Draft'), ('published', 'Published')]
